@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل السيارة | Mercedes G-Wagon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo" data-i18n="logo">فخامة للسيارات</div>
+                <ul class="nav-links">
+                    <li><a href="index.html" data-i18n="home">الرئيسية</a></li>
+                    <li><a href="index.html#fleet" data-i18n="cars">السيارات</a></li>
+                    <li><a href="#" data-i18n="about">من نحن</a></li>
+                    <li><a href="#" data-i18n="contact">اتصل بنا</a></li>
+                </ul>
+                <div class="controls">
+                    <select id="lang-select" class="lang-select">
+                        <option value="ar">العربية</option>
+                        <option value="en">English</option>
+                        <option value="fr">Français</option>
+                    </select>
+                    <button id="theme-toggle" class="btn-icon">
+                        <i id="theme-icon" class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="detail-container">
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?auto=format&fit=crop&q=80&w=1200" alt="Exterior"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1542362567-b058c02b9ac1?auto=format&fit=crop&q=80&w=800" alt="Interior"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1554744512-d6c603f27c54?auto=format&fit=crop&q=80&w=800" alt="Seats"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&q=80&w=800" alt="Trunk"></div>
+            </div>
+
+            <div class="info-section">
+                <h1 data-car-model>Mercedes G-Wagon G63</h1>
+                <p class="car-price">1200 <span data-i18n="per_day">يومياً</span></p>
+                
+                <h3 data-i18n="specs">المواصفات</h3>
+                <div class="specs-grid">
+                    <div class="spec-item">
+                        <span class="spec-label" data-i18n="model">الموديل</span>
+                        <span class="spec-value">AMG G63</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label" data-i18n="year">السنة</span>
+                        <span class="spec-value">2024</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label" data-i18n="transmission">ناقل الحركة</span>
+                        <span class="spec-value" data-i18n="automatic">أوتوماتيك</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label" data-i18n="fuel">الوقود</span>
+                        <span class="spec-value" data-i18n="petrol">بنزين</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label" data-i18n="seats">المقاعد</span>
+                        <span class="spec-value">5</span>
+                    </div>
+                </div>
+
+                <div class="booking-card">
+                    <h3 data-i18n="rental_terms">شروط الكراء</h3>
+                    <p><strong data-i18n="deposit">الوديعة</strong>: 7000 MAD</p>
+                    <p><strong data-i18n="km_limit">حدود الكيلومترات</strong>: <span data-i18n="unlimited">غير محدود</span></p>
+                    <p><strong data-i18n="weekly_discount">خصم الأسبوع</strong>: 20%</p>
+                    
+                    <a href="#" class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-i18n="book_whatsapp">احجز عبر واتساب</span>
+                    </a>
+                </div>
+
+                <a href="index.html" class="back-btn">
+                    <i class="fas fa-arrow-right"></i> <span data-i18n="back_home">العودة للرئيسية</span>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightbox-img" src="" alt="Lightbox Image">
+    </div>
+
+    <footer>
+        <div class="container">
+            <p data-i18n="copyright">© 2026 فخامة للسيارات. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> موقع عبدالرزاق لي اتجرب | wab abderazak for test </title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo" data-i18n="logo">  موقع عبدالرزاق لي اتجرب </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" data-i18n="home">الرئيسية</a></li>
+                    <li><a href="#fleet" data-i18n="cars">السيارات</a></li>
+                    <li><a href="#" data-i18n="about">من نحن</a></li>
+                    <li><a href="#" data-i18n="contact">اتصل بنا</a></li>
+                </ul>
+                <div class="controls">
+                    <select id="lang-select" class="lang-select">
+                        <option value="ar">العربية</option>
+                        <option value="en">English</option>
+                        <option value="fr">Français</option>
+                    </select>
+                    <button id="theme-toggle" class="btn-icon">
+                        <i id="theme-icon" class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 data-i18n="hero_title">استأجر سيارة أحلامك اليوم</h1>
+            <p data-i18n="hero_subtitle">نقدم لك أفضل السيارات الفاخرة بأسعار تنافسية وخدمة استثنائية.</p>
+            <a href="#fleet" class="btn-details" style="display: inline-block; width: auto; padding: 15px 40px;" data-i18n="browse_cars">تصفح السيارات</a>
+        </div>
+    </section>
+
+    <!-- Car Fleet Section -->
+    <section id="fleet" class="container">
+        <div class="section-title">
+            <h2 data-i18n="our_fleet">أسطولنا المميز</h2>
+        </div>
+
+        <div class="car-grid">
+            <!-- Car 1 -->
+            <div class="car-card">
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=800" alt="Porsche 911" class="car-image">
+                <div class="car-info">
+                    <h3>Porsche 911 Carrera</h3>
+                    <div class="car-price">900 <span data-i18n="per_day">يومياً</span></div>
+                    <a href="car-details-1.html" class="btn-details" data-i18n="view_details">عرض التفاصيل</a>
+                </div>
+            </div>
+
+            <!-- Car 2 -->
+            <div class="car-card">
+                <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80&w=800" alt="BMW M4" class="car-image">
+                <div class="car-info">
+                    <h3>BMW M4 Competition</h3>
+                    <div class="car-price">750 <span data-i18n="per_day">يومياً</span></div>
+                    <a href="car-details-2.html" class="btn-details" data-i18n="view_details">عرض التفاصيل</a>
+                </div>
+            </div>
+
+            <!-- Car 3 -->
+            <div class="car-card">
+                <img src="https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?auto=format&fit=crop&q=80&w=800" alt="Mercedes G-Wagon" class="car-image">
+                <div class="car-info">
+                    <h3>Mercedes G-Wagon</h3>
+                    <div class="car-price">1200 <span data-i18n="per_day">يومياً</span></div>
+                    <a href="car-details-3.html" class="btn-details" data-i18n="view_details">عرض التفاصيل</a>
+                </div>
+            </div>
+
+            <!-- Car 4 -->
+            <div class="car-card">
+                <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&q=80&w=800" alt="Ferrari 488" class="car-image">
+                <div class="car-info">
+                    <h3>Ferrari 488 Pista</h3>
+                    <div class="car-price">2500 <span data-i18n="per_day">يومياً</span></div>
+                    <a href="car-details-4.html" class="btn-details" data-i18n="view_details">عرض التفاصيل</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p data-i18n="copyright">© 2026 فخامة للسيارات. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
